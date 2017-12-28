@@ -27,6 +27,8 @@ public class WorkingClass implements Runnable {
             message.obj = "An error occurred";
             uiHandler.sendMessage(message);
         }
+
+
     }
 
     Handler uiHandler = new Handler(new Handler.Callback() {
@@ -43,4 +45,11 @@ public class WorkingClass implements Runnable {
             return false;
         }
     });
+
+
+
+
+
+
+
 }

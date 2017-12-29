@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    //https://alvinalexander.com/source-code/android/android-handler-and-progressbar-example
     private TextView textView;
 
     @Override

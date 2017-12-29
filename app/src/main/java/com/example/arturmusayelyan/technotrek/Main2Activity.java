@@ -1,13 +1,12 @@
 package com.example.arturmusayelyan.technotrek;
 
 import android.os.Bundle;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     static TextView textView;
-    MyHandler handler;
+   // MyHandler handler;
 
     MyHandlerDEmo myHandlerDEmo;
 
@@ -25,27 +24,25 @@ public class Main2Activity extends AppCompatActivity {
 //        thread.start();
 
 
-        handler = new MyHandler();
+    //    handler = new MyHandler();
 
         myHandlerDEmo = new MyHandlerDEmo(textView);
 
-
-
-        new Thread(new MyThread()).start();
+      //  new Thread(new MyThread()).start();
 
     }
 
-    static class MyHandler extends android.os.Handler {
-
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            if (msg == 0){
-                //say user that download was complite and open video and play
-            }
-
-        }
-    }
+//    static class MyHandler extends android.os.Handler {
+//
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            if (msg == 0){
+//                //say user that download was complite and open video and play
+//            }
+//
+//        }
+//    }
 
     class ThreadClass implements Runnable {
 
@@ -57,15 +54,15 @@ public class Main2Activity extends AppCompatActivity {
         }
     }
 
-    class MyThread implements Runnable {
-
-        @Override
-        public void run() {
-            //some logic
-            if (download was finished){
-                handler.sendEmptyMessage(0);
-
-            }
-        }
-    }
+//    class MyThread implements Runnable {
+//
+//        @Override
+//        public void run() {
+//            //some logic
+//            if (download was finished){
+//                handler.sendEmptyMessage(0);
+//
+//            }
+//        }
+//    }
 }
